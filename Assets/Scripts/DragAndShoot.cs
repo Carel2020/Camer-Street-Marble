@@ -4,15 +4,36 @@ using UnityEngine;
 
 public class DragAndShoot : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Vector3 mousePressDownPos;
+    private Vector3 mouseReleasePos;
+
+    private Rigidbody rb;
+
+    private bool isShoot;
+
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnMouseDown()
     {
-        
+        mousePressDownPos = Input.mousePosition;
+    }
+
+    private void OnMouseUp()
+    {
+        mouseReleasePos = Input.mousePosition;
+        Shoot(mouseReleasePos - mousePressDownPos);
+    }
+
+    private float forceMultiplier = 2;
+    void Shoot(Vector3 Force)
+    {
+        if (isShoot)
+            return;
+
+        rb.AddForce(new Vector3(Force.x, Force.y, Force.y) * forceMultiplier);
+        isShoot = true;
     }
 }
