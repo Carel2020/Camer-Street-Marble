@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "618241226009",
+    "project_id": "camer-street-marble",
+    "storage_bucket": "camer-street-marble.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618241226009:android:2c9ba09b0d3cc5e1530188",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.Camer_Street_Marble"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618241226009-ofrmafsq5f5hrb300go13dv4grj518pt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3V-NJTPd77EvIiymHiSLNIzx5zozV2bY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618241226009-ofrmafsq5f5hrb300go13dv4grj518pt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

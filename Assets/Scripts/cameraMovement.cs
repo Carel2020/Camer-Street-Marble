@@ -10,7 +10,9 @@ public class cameraMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        offset = transform.position;
+        //offset = transform.position;
+        //Calculate and store the offset value by getting the distance between the player's position and camera's position.
+        offset = transform.position - player.transform.position;
     }
 
     // Update is called once per frame
